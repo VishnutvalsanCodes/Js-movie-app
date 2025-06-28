@@ -1,4 +1,60 @@
-.search-bar{
-    border-radius:30%;
-    border: none;
+/* index.css */
+
+/* Reset some defaults */
+body {
+  background-color: #2f0000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Card styling */
+.card {
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Description container (right side of card) */
+#desc-id {
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .navbar .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+
+  #desc-id {
+    padding: 1rem;
+  }
 }
